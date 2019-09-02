@@ -1,8 +1,13 @@
-window.onload =() =>{
+const lolData=Object.entries(LOL.data);
+console.log(lolData);
+let name = '';
+for (let index = 0; index < lolData.length; index++) {
+   for (name in lolData) {
+      name = lolData[name];
+   }
+   console.log(name);   
+}
 
 
-const lolData=Object.values(LOL);
-for (let i=0; i<lolData.lenght; i++){
-    document.getElementById("container").innerHTML+=`
-    <img src="${LOL[i].splash}">`
-  }
+// for (let index = 0; index < lolData.length; index++) ;
+   
