@@ -1,12 +1,14 @@
 body{
     background-color:#D1C4E9;
 }
-#hea{
-    
-}
-
 #btn-go{
     width: 90px;
+    height:40px ;
+    border-radius: 20px;
+}
+
+.select-tags{
+    width: 150px;
     height:40px ;
     border-radius: 20px;
 }
