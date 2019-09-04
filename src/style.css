@@ -14,30 +14,30 @@ body{
 }
 
 .ip-card {
-    background-color: transparent;
+    background-color: #2980b9;
     width: 300px;
     height: 300px;
-    perspective: 1000px;
+    perspective: 100px;
   }
   
   .flip-card-inner {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 10%;
+    height: 10%;
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   
-  .flip-card:hover .flip-card-inner {
+  /* .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
+  } */
   
   .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position:relative;
+    width: 10%;
+    height: 10%;
     backface-visibility: hidden;
   }
   
@@ -49,5 +49,5 @@ body{
   .flip-card-back {
     background-color: #2980b9;
     color: white;
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
   }

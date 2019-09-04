@@ -24,19 +24,3 @@ selecTags=addEventListener("change",()=>
  }})
 
 
-// document.addEventListener("load", () => {
-//     createCards(lolData);
-// });
-// let createCards = (array) => {
-//     for (let i = 0; i < array.length; i++)
-//         for (let i = 0; i < lolData.length; i++); {
-
-//         let cardContainer = document.createElement("div");
-
-//         let splash = document.createElement("img");
-//         splash.setAttribute("src", "splash");
-
-//         cardContainer.appendChild(splash);
-//         container.appendChild(cardContainer).innerHTML;   
-//     }
-// }
