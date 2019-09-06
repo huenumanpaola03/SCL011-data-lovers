@@ -1,3 +1,4 @@
+
 body {
   background-color: rgba(25, 12, 46, 0);
   font-family: Arial, Helvetica, sans-serif;
@@ -62,6 +63,21 @@ body {
   columns: 4;
 margin-top:20px;
   margin:auto;
+
+body{
+    background-color:#D1C4E9;
+}
+#btn-go{
+    width: 90px;
+    height:40px ;
+    border-radius: 20px;
+}
+
+.select-tags{
+    width: 150px;
+    height:40px ;
+    border-radius: 20px;
+
 }
 .flip-card {
   background-color: teal;
@@ -103,6 +119,7 @@ margin-top:20px;
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+
 }
 
 @keyframes changee{
@@ -110,4 +127,5 @@ margin-top:20px;
   20%{margin-left:0 ;  }
 
   25%{margin-left}
+
 }

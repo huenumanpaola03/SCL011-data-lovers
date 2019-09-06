@@ -9,6 +9,7 @@
 </head>
 
 <body>
+ <button id="btn-go">Siguiente</button>
 
   <section id="firts-page">
     <header id="header1">
@@ -19,17 +20,19 @@
     <div id="selects">
 
       <div class="select-tags">
-        <select class="select-tags" name=filt>
-          <option selected>Todos los roles</option>
-          <option value="assasin">Asesino</option>
-          <option value="tank">Tanque</option>
-          <option value="mage">Magico</option>
-          <option value="support">Soporte</option>
-          <option value="marksman">Tirador</option>
-          <option value="fighter">Luchador</option>
-        </select>
 
+        <select class="select-tags" id="select-tags"> 
+         <option value="" selected >Todos los roles</option>
+         <option value="Assassin">Asesino</option>
+         <option value="Tank">Tanque</option>
+         <option value="Mage">Magico</option>
+         <option value="Support">Soporte</option>
+         <option value="Marksman">Tirador</option>
+         <option value="Fighter">Luchador</option>
+        </select>
+        <div id="container"> </div>
       </div>
+    </div>
 
     </div>
     <div id="root"></div>

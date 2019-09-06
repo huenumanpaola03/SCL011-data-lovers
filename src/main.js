@@ -1,12 +1,28 @@
-gitconst lolData = Object.values(LOL.data);
+
+const lolData = Object.values(LOL.data);
+window.lolData = lolData;
+
+
 
 let container = document.getElementById("root");
+ 
 
 
-selecTags = addEventListener("change", () => {
-  const selecTags = document.getElementById("select-tags");
-  for (let index = 0; index < lolData.length; index++) {
-    container.innerHTML += ` 
+
+
+
+
+document.getElementById("who").addEventListener("click", () => {
+  document.getElementById("firts-page").style.display = "none";
+  document.getElementById("second-page").style.display = "block";
+});
+ 
+const createCards = (lolData) => { 
+  let characters = ""; 
+  lolData.forEach(element => {
+    
+    card =
+` 
  <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -25,11 +41,27 @@ selecTags = addEventListener("change", () => {
     </div>
   </div>
 </div>`
-  }
-})
+     
+    characters += card;
+  })
+  container.innerHTML = characters;
+}
+
+createCards(lolData);
 
 
-document.getElementById("who").addEventListener("click", () => {
-  document.getElementById("firts-page").style.display = "none";
-  document.getElementById("second-page").style.display = "block";
-});
+
+
+const selecTags = document.getElementById("select-tags");
+ selecTags.addEventListener("change",()=>{  
+    const condition = selecTags.value 
+    let results = window.filterT(lolData, condition);
+    createCards(results);
+
+ });
+
+
+ 
+
+ 
+
