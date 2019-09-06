@@ -55,14 +55,14 @@ body {
   width: 210px;
   height: 240px;
   border-radius: 20px;
-
 }
 
-#root{
+#root {
   columns: 4;
-margin-top:20px;
-  margin:auto;
+  margin-top: 20px;
+  margin: auto;
 }
+
 .flip-card {
   background-color: teal;
   width: 210px;
@@ -70,7 +70,6 @@ margin-top:20px;
   perspective: 100px;
   margin-top: 50px;
   border-radius: 30px;
-
 }
 
 .flip-card-inner {
@@ -105,9 +104,13 @@ margin-top:20px;
   transform: rotateY(180deg);
 }
 
-@keyframes changee{
-  0%{margin-left:0;}
-  20%{margin-left:0 ;  }
+@keyframes changee {
+  0% { margin-left: 0;}
+  20% {margin-left: 0;}
 
-  25%{margin-left}
+  25% {margin-left: -100%; }
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
 }
