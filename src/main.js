@@ -1,4 +1,4 @@
-const lolData = Object.values(LOL.data);
+gitconst lolData = Object.values(LOL.data);
 
 let container = document.getElementById("root");
 
