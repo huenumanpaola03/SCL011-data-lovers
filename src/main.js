@@ -10,7 +10,7 @@ selecTags = addEventListener("change", () => {
  <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-    <h3>Nombre: ${lolData[index].name}</h3s>
+    <h3>Nombre: ${lolData[index].name}</h3>
     <img class="imagen-lol" src="${lolData[index].splash}" >
     </div>
 
