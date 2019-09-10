@@ -3,55 +3,71 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Data Lovers</title>
+  <title>lolPedia</title>
   <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
- <button id="btn-go">Siguiente</button>
 
-  <section id="firts-page">
-    <header id="header1">
-      <img id="logo" src="https://i.ibb.co/jH6CzVK/descarga-1.jpg">
-      <button id="who">Tips secretos</button>
-    </header>
-
-    <div id="selects">
-
-      <div class="select-tags">
-        
-        <select class="select-tags" id="select-tags" name=filt> 
-         <option value="" selected >Todos los roles</option>
-         <option value="Assassin">Asesino</option>
-         <option value="Tank">Tanque</option>
-         <option value="Mage">Magico</option>
-         <option value="Support">Soporte</option>
-         <option value="Marksman">Tirador</option>
-         <option value="Fighter">Luchador</option>
-        </select>
-        <div id="container"> </div>
-      </div>
-    </div>
-   
-
-    </div>
-    <div id="root"></div>
-    <div id="container"> </div>
+  <section id="firts-page">   
 
     <div class="slider">
       <ul>
-    <li><img class="images" src="" alt=""></li>
-    <li><img class="images" src="https://i.ibb.co/NFn1Ctm/images-3.jpg" alt=""></li>
-    <li><img class="images" src="https://i.ibb.co/8PmXJ0t/images-4.jpg" alt=""></li>
-    <li><img class="images" src="https://i.ibb.co/prG57PJ/League-Of-Legends-Gameplay-9.jpg" alt=""></li>
-    <li><img class="images" src="i" alt=""></li>
-    </ul>
-  </div>
+        <li><img class="images" src="https://i.ibb.co/D17zsjm/league-of-legends.jpg" alt="league-of-legends"></li>
+        <li><img class="images" src="https://i.ibb.co/cwNZjCh/League-Of-Legends-Gameplay-9.jpg" alt=""></li>
+        <li><img class="images" src="https://i.ibb.co/RysZWyf/B5C.jpg" alt=""></li>
+        <li><img class="images" src="https://i.ibb.co/prG57PJ/League-Of-Legends-Gameplay-9.jpg" alt=""></li>
+      </ul>
+      <button id="next">Siguiente</button>
+    </div>
+  
   </section>
 
-  <section id="second-page"> </section>
 
+  <section id="second-page">
+    <header id="header1">
+      <img id="logo" src="https://i.ibb.co/jH6CzVK/descarga-1.jpg" >
+    
+    </header>
+
+    <div id="selects">
+      <div class="select-tags">
+        <select class="select-tags" id="filterType">
+          <option value="" selected>Todos los roles</option>
+          <option value="Assassin">Asesino</option>
+          <option value="Tank">Tanque</option>
+          <option value="Mage">Magico</option>
+          <option value="Support">Soporte</option>
+          <option value="Marksman">Tirador</option>
+          <option value="Fighter">Luchador</option>
+        </select>
+      </div>
+
+
+
+      <div class="select-tags">
+        <select class="select-tags" id="filter P">
+          <option value="" selected>Tipos</option>
+          <option value="BloodWell">BloodWell</option>
+          <option value="MP">mp</option>
+          <option value="Energy">energy</option>
+          <option value="None">none</option>
+          <option value="Gnarfury">gnarfury</option>
+          <option value="Battlefury">battlefury</option>
+          <option value="Rage">rage</option>
+          <option value="Ferocity">ferocity</option>
+          <option value="Heat">heat</option>
+          <option value="Wind">Wind</option>
+
+        </select>
+      </div>
+    </div>
+        <div id="root"></div>
+
+  </section>
+
+  
 
   <script src="./data/lol/lol.js"></script>
   <script src="data.js"></script>
