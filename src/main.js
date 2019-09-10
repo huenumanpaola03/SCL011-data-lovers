@@ -74,29 +74,7 @@ selectpartype.addEventListener("change",()=>{
 
 
 
-
-/*
-
-const btnBuscar = document.getElementById("btnbuscar");
-const inputBuscar = document.getElementById("buscador");
-btnBuscar.addEventListener("click", ()=>{
-const condition3 = inputBuscar.value;
-
-for (let index = 0; index < lolData.length; index++) {
-lolData.sort();
-let bsc = lolData.indexOf("name").value;
-
-
-}
-})
-  
-
-for (const name in lolData) {
-  if (lolData.hasOwnProperty(name)) {
-    const element = lolData[name];
-    
-  }
-}  */
+""
 
 
 
