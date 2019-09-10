@@ -8,6 +8,7 @@ body {
  margin: -3%;
  height: 100%;
 }
+
 #header1 {
   width: 100%;
   height: 120px;
@@ -31,7 +32,6 @@ body {
   height: 800px;
   margin: auto;
   margin-top: 34px;
-
 }
 
 .slider ul {
@@ -48,7 +48,6 @@ body {
 .images {
   width: 980px;
   height: 550px;
-
 }
 
 .select-tags {
@@ -58,10 +57,7 @@ body {
   display:inline-block;
   margin-top: 10px;
   margin-left: 30px;
-
-
 }
-
 
 
 #root {
@@ -86,7 +82,6 @@ margin: 20px;
   margin-top: 50px;
   border-radius: 30px;
   margin-top: 50px;
-  
 }
 
 .flip-card-inner {
@@ -96,7 +91,6 @@ margin: 20px;
   text-align: center;
   transition: transform 0.7s;
   transform-style: preserve-3d;
-
 }
 
 .flip-card:hover .flip-card-inner {
@@ -108,26 +102,22 @@ margin: 20px;
   width: 10%;
   height: 10%;
   backface-visibility: hidden;
-
 }
 
 
 .flip-card-back {
-
   color: white;
   transform: rotateY(180deg);
 }
+
 /* Es para dar animaciones especificamente */
 @keyframes changee {
   0% { margin-left: 0;}
   20% {margin-left: 0;}
-
   25% {margin-left: -100%; }
   45%{margin-left: -100%;}
-
   50%{margin-left: -200%;}
   70%{margin-left: -200%;}
-
   75%{margin-left:-300%;}
   100%{margin-left:-300;}
 }

@@ -1,26 +1,6 @@
-
 const lolData = Object.values(LOL.data);
 window.lolData = lolData;
 
-const selecTags = document.getElementById("filterType");
-selecTags.addEventListener("change",()=>{  
-     const condition = selecTags.value 
-     let results = window.filterT(lolData, condition);
-   createCards(results);
-
- });
-
-
-const selectpartype = document.getElementById("filter P");
-selectpartype.addEventListener("change",()=>{  
-   const condition2 = selectpartype.value 
-   let results2 = window.filterP(lolData, condition2);
-   createCards(results2);
-
-});
-
-
-let container = document.getElementById("root");
 
 document.getElementById("next").addEventListener("click", () => {
   document.getElementById("firts-page").style.display = "none";
@@ -28,13 +8,12 @@ document.getElementById("next").addEventListener("click", () => {
 });
  
 
+const container = document.getElementById("root");
 const createCards = (lolData) => { 
   let characters = ""; 
   lolData.forEach(element => {
-    
     card =
-` 
- <div class="flip-card">
+`  <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
     <h3>Nombre: ${element.name}</h3>
@@ -50,15 +29,34 @@ const createCards = (lolData) => {
     </div>
   </div>
 </div>`
-     
-    characters += card;
+ characters += card;
   })
-  container.innerHTML = characters;
+ container.innerHTML = characters;
 }
-
 createCards(lolData)
 
 
-// document.getElementById("filterType").addEventListener("change",()=>{ 
-//   document
-// )
+
+
+const selecTags = document.getElementById("select-tags");
+ selecTags.addEventListener("change",()=>{  
+    const condition = selecTags.value 
+    let results = window.filterT(lolData, condition);
+    createCards(results);
+ });
+
+
+const selectpartype = document.getElementById("select-partype");
+selectpartype.addEventListener("change",()=>{  
+   const condition2 = selectpartype.value 
+   let results2 = window.filterP(lolData, condition2);
+   createCards(results2);
+});
+  
+
+  const selectOrder= document.getElementById("name");
+  selectOrder.addEventListener('change', () => {
+    let condition3 = selectOrder.value;
+    let result3 = sortName(lolData,"name",condition3);
+    createCards(result3);
+  });

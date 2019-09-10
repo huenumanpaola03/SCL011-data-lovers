@@ -11,7 +11,6 @@
 <body>
 
   <section id="firts-page">   
-
     <div class="slider">
       <ul>
         <li><img class="images" src="https://i.ibb.co/D17zsjm/league-of-legends.jpg" alt="league-of-legends"></li>
@@ -21,53 +20,63 @@
       </ul>
       <button id="next">Siguiente</button>
     </div>
-  
   </section>
 
 
   <section id="second-page">
+    
     <header id="header1">
       <img id="logo" src="https://i.ibb.co/jH6CzVK/descarga-1.jpg" >
-    
+      <button id="who">Tips secretos</button>
     </header>
 
     <div id="selects">
       <div class="select-tags">
-        <select class="select-tags" id="filterType">
-          <option value="" selected>Todos los roles</option>
-          <option value="Assassin">Asesino</option>
-          <option value="Tank">Tanque</option>
-          <option value="Mage">Magico</option>
-          <option value="Support">Soporte</option>
-          <option value="Marksman">Tirador</option>
-          <option value="Fighter">Luchador</option>
-        </select>
-      </div>
-
-
-
-      <div class="select-tags">
-        <select class="select-tags" id="filter P">
-          <option value="" selected>Tipos</option>
-          <option value="BloodWell">BloodWell</option>
-          <option value="MP">mp</option>
-          <option value="Energy">energy</option>
-          <option value="None">none</option>
-          <option value="Gnarfury">gnarfury</option>
-          <option value="Battlefury">battlefury</option>
-          <option value="Rage">rage</option>
-          <option value="Ferocity">ferocity</option>
-          <option value="Heat">heat</option>
-          <option value="Wind">Wind</option>
-
+        <select class="select-tags" id="select-tags"> 
+         <option value="" selected >Roles</option>
+         <option value="Assassin">Asesino</option>
+         <option value="Tank">Tanque</option>
+         <option value="Mage">Magico</option>
+         <option value="Support">Soporte</option>
+         <option value="Marksman">Tirador</option>
+         <option value="Fighter">Luchador</option>
         </select>
       </div>
     </div>
-        <div id="root"></div>
 
-  </section>
 
-  
+    <div id="selects">
+      <div class="select-partype">
+        <select class="select-partype" id="select-partype"> 
+         <option value="" selected >Tipos</option>
+         <option value="BloodWell">BloodWell</option>
+         <option value="MP">mp</option>
+         <option value="Energy">energy</option>
+         <option value="None">none</option>
+         <option value="Gnarfury">gnarfury</option>
+         <option value="Battlefury">battlefury</option>
+         <option value="Rage">rage</option>
+         <option value="Ferocity">ferocity</option>
+         <option value="Heat">heat</option>
+         <option value="Wind">Wind</option>
+        </select>
+      </div>
+    </div>
+
+    
+    <div id="select-order">
+      <select name="select" id="name" class="pok-filter">
+        <option value="value1">Ordena</option>
+        <option value="a-z">a-z</option>
+        <option value="z-a">z-a</option>
+      </select>
+    </div>
+   
+    
+    
+ </section>
+ <div id="root"></div>
+
 
   <script src="./data/lol/lol.js"></script>
   <script src="data.js"></script>
