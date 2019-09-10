@@ -1,11 +1,12 @@
- const filterT = (lolData, condition) => {
+const filterT = (lolData, condition) => {
 
-   let result = lolData.filter (element =>{
-     return element.tags.includes(condition);
-   })
-   return result;
- }
+  let result = lolData.filter (element =>{
+    return element.tags.includes(condition);
+  })
+  return result;
+}
 window.filterT = filterT;
+
 
 
 const filterP = (lolData, condition2) => {
@@ -14,10 +15,9 @@ const filterP = (lolData, condition2) => {
     return element.partype.includes(condition2);
   })
   return result;
+
 }
 window.filterP = filterP;
-
-
 
 
 
@@ -41,6 +41,7 @@ return orderName;
 }
 
 window.sortName = sortName;
+
 
 
 
