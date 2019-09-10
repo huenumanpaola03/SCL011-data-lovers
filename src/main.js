@@ -1,14 +1,5 @@
-
 const lolData = Object.values(LOL.data);
 window.lolData = lolData;
-
-
-
-let container = document.getElementById("root");
- 
-
-
-
 
 
 
@@ -17,6 +8,9 @@ document.getElementById("who").addEventListener("click", () => {
   document.getElementById("second-page").style.display = "block";
 });
  
+
+
+const container = document.getElementById("root");
 const createCards = (lolData) => { 
   let characters = ""; 
   lolData.forEach(element => {
@@ -26,18 +20,16 @@ const createCards = (lolData) => {
  <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-    <h3>Nombre: ${lolData[index].name}</h3>
-    <img class="imagen-lol" src="${lolData[index].splash}" >
+    <h3>Nombre: ${element.name}</h3>
+    <img class="imagen-lol" src="${element.splash}" >
     </div>
 
-
-
     <div class="flip-card-back">
-    <h1>${lolData[index].name}</h1>
-      <h4>Roles: ${lolData[index].tags}</h4> 
-      <h4>Tipo: ${lolData[index].partype}</h4> 
+    <h1>${element.name}</h1>
+      <h4>Roles: ${element.tags}</h4> 
+      <h4>Tipo: ${element.partype}</h4> 
     
-        <h4> nivel de dicultad:${lolData[index].info.difficulty}</h4> 
+        <h4> nivel de dicultad:${element.info.difficulty}</h4> 
     </div>
   </div>
 </div>`
@@ -50,8 +42,6 @@ const createCards = (lolData) => {
 createCards(lolData);
 
 
-
-
 const selecTags = document.getElementById("select-tags");
  selecTags.addEventListener("change",()=>{  
     const condition = selecTags.value 
@@ -59,6 +49,56 @@ const selecTags = document.getElementById("select-tags");
     createCards(results);
 
  });
+
+
+const selectpartype = document.getElementById("select-partype");
+selectpartype.addEventListener("change",()=>{  
+   const condition2 = selectpartype.value 
+   let results2 = window.filterP(lolData, condition2);
+   createCards(results2);
+
+});
+
+
+
+  
+  //ordenar
+  const selectOrder= document.getElementById("name");
+  selectOrder.addEventListener('change', () => {
+    let condition3 = selectOrder.value;
+    let result3 = sortName(lolData,"name",condition3);
+    createCards(result3);
+
+  });
+
+
+
+
+
+/*
+
+const btnBuscar = document.getElementById("btnbuscar");
+const inputBuscar = document.getElementById("buscador");
+btnBuscar.addEventListener("click", ()=>{
+const condition3 = inputBuscar.value;
+
+for (let index = 0; index < lolData.length; index++) {
+lolData.sort();
+let bsc = lolData.indexOf("name").value;
+
+
+}
+})
+  
+
+for (const name in lolData) {
+  if (lolData.hasOwnProperty(name)) {
+    const element = lolData[name];
+    
+  }
+}  */
+
+
 
 
  
