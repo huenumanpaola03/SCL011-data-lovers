@@ -1,28 +1,24 @@
-
-const filterT = (lolData, condition) => {
-
-  let result = lolData.filter (element =>{
+//creamos funciones de filtro las cuales van a filtrar los elementos segun la condicion seleccionada 
+const filterT = (lolData , condition) => {
+  let result = lolData.filter(element => {
     return element.tags.includes(condition);
-  })
+  });
   return result;
-}
+};
 window.filterT = filterT;
 
 
 
 const filterP = (lolData, condition2) => {
-
-  let result = lolData.filter (element =>{
+  let result = lolData.filter(element => {
     return element.partype.includes(condition2);
   })
   return result;
-
 }
 window.filterP = filterP;
 
 
-
-const sortName=(lolData,sort,condition3)=> {
+const sortName = (lolData,sort,condition3)=> {
  let orderName = lolData;
  if (condition3 == "a-z"){
 orderName.sort((a,b)=> {
@@ -40,9 +36,4 @@ if (condition3 == "z-a"){
 }
 return orderName;
 }
-
 window.sortName = sortName;
-
-
-
-

@@ -115,7 +115,7 @@ const LOL = {
       title: "the Fist of Shadow",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png",
-      splash:
+      splash:                                                                                                                                                        
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg",
       blurb:
         "There exists an ancient order originating in the Ionian Isles dedicated to the preservation of balance. Order, chaos, light, darkness -- all things must exist in perfect harmony for such is the way of the universe. This order is known as the Kinkou ...",
@@ -6971,5 +6971,5 @@ const LOL = {
     }
   }
 };
-
 window.LOL=window.LOL;
+
