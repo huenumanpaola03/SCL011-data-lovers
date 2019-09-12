@@ -4,13 +4,32 @@ require('../src/data');
 require('./data.spec.js');
 
 
-describe('example', () => {
-  
+describe('filterT', () => {
+
+  const muestra = [ 
+    {
+      name:"Aatrox",
+      tags: "",
+      partype: "BloodWell"
+    },
+    {
+      name:"Ahri",
+      tags: "Mage",
+      partype: "MP"
+    },
+    {
+      name:"Yasuo",
+      tags: "Fighter",
+      partype: "Wind"
+    }
+  ]
   it('debería ser una función', () => {
-    assert.equal(typeof example, 'function');
+    assert.equal(typeof filterT, 'function');
   });
 
-  it('debería retornar "example"', () => {
-    assert.equal(example(), 'example');
+  it('debería retornar "Yasuo"cuando se filtra type "Fighter" ', () => {
+    assert.deepEqual(window.filterT(muestra,"Fighter") ,[{name:"Yasuo",
+    tags: "Fighter",
+    partype: "Wind"}]);
   });
 })

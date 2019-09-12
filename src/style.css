@@ -1,30 +1,32 @@
 body {
-  background-color: rgba(20, 20, 20, 0);
+background-color:#303030;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 #firts-page{
-  background-color: black;
- margin: -3%;
- height: 100%;
+  background-color: #303030;
+
 }
 
 #header1 {
   width: 100%;
   height: 120px;
-  background-color: black;
+  background-color:#D7AC35;
 }
 
 #logo {
   margin-top: 15px;
-  margin-left: 15px;
+  margin-left: 50px;
+ 
 }
 
 #next{
-  border-radius: 20px;
+  border-radius: 5px;
   width: 150px;
   height: 50px;
-  margin-left: 82%;
+  margin-left: 40%;
+
 }
 
 .slider {
@@ -38,7 +40,7 @@ body {
   display: flex;
   padding: 0;
   width: 300%;
-  animation: changee 10s infinite;
+  animation: changee 15s infinite;
 }
 
 .slider li {
@@ -47,41 +49,56 @@ body {
 
 .images {
   width: 980px;
-  height: 550px;
+  height: 400px;
 }
 
+
+#font{
+  color:#D7AC35;
+  text-align: center;
+}
 .select-tags {
   width: 150px;
   height: 40px;
-  border-radius: 20px;
-  display:inline-block;
-  margin-top: 10px;
-  margin-left: 30px;
+  border-radius: 5px;
+  margin:10px;
+
+}
+#selects {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+margin-left: 60px;
+margin-right: 60px;
+margin-top:2%;
 }
 
-
 #root {
-  margin: auto;
+ 
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
   justify-content: space-evenly;
 margin: 20px;
+
 }
 
 .imagen-lol {
-  width: 210px;
-  height: 200px;
+  width: 200px;
+  height: 190px;
   border-radius: 10px;
+  margin: 5px;
+
 }
 
 .flip-card {
   background-color:#cda434;
   width: 210px;
-  height: 270px;
+  height: 300px;
   margin-top: 50px;
   border-radius: 30px;
   margin-top: 50px;
+
 }
 
 .flip-card-inner {
@@ -91,6 +108,7 @@ margin: 20px;
   text-align: center;
   transition: transform 0.7s;
   transform-style: preserve-3d;
+  text-align: center;
 }
 
 .flip-card:hover .flip-card-inner {

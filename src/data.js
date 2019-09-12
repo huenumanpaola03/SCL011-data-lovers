@@ -1,3 +1,4 @@
+
 const filterT = (lolData, condition) => {
 
   let result = lolData.filter (element =>{
@@ -21,7 +22,7 @@ window.filterP = filterP;
 
 
 
-let sortName = (lolData,sort,condition3)=> {
+const sortName=(lolData,sort,condition3)=> {
  let orderName = lolData;
  if (condition3 == "a-z"){
 orderName.sort((a,b)=> {
