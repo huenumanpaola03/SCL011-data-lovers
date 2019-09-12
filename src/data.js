@@ -14,10 +14,8 @@ const filterP = (lolData, condition2) => {
     return element.partype.includes(condition2);
   })
   return result;
-
 }
 window.filterP = filterP;
-
 
 
 const sortName = (lolData,sort,condition3)=> {
