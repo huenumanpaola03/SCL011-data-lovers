@@ -1,39 +1,44 @@
-
 body {
-  background-color: rgba(25, 12, 46, 0);
+  background-color: rgba(20, 20, 20, 0);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#firts-page{
+  background-color: black;
+ margin: -3%;
+ height: 100%;
 }
 
 #header1 {
   width: 100%;
-  height: 100px;
+  height: 120px;
   background-color: black;
 }
 
 #logo {
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
-#who {
-  margin-top: -15px;
+#next{
   border-radius: 20px;
-  width: 90px;
-  height: 35px;
-  margin-left: 80%;
+  width: 150px;
+  height: 50px;
+  margin-left: 82%;
 }
 
 .slider {
   width: 1000px;
-  height: 300px;
+  height: 800px;
   margin: auto;
+  margin-top: 34px;
 }
 
 .slider ul {
   display: flex;
   padding: 0;
   width: 300%;
-  animation: changee 20s infinite;
+  animation: changee 10s infinite;
 }
 
 .slider li {
@@ -41,52 +46,46 @@ body {
 }
 
 .images {
-  width: 1000px;
-  height: 300px;
+  width: 980px;
+  height: 550px;
 }
 
 .select-tags {
   width: 150px;
   height: 40px;
   border-radius: 20px;
-  margin-top: 11px;
+  display:inline-block;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.second-page{
+  background-color:#cda434;
+}
+
+#root {
+  background-color: black;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+margin: 20px;
 }
 
 .imagen-lol {
   width: 210px;
-  height: 240px;
-  border-radius: 20px;
-
+  height: 200px;
+  border-radius: 10px;
 }
 
-#root{
-  columns: 4;
-margin-top:20px;
-  margin:auto;
-}
-body{
-    background-color:#D1C4E9;
-}
-#btn-go{
-    width: 90px;
-    height:40px ;
-    border-radius: 20px;
-}
-
-.select-tags{
-    width: 150px;
-    height:40px ;
-    border-radius: 20px;
-
-}
 .flip-card {
-  background-color: teal;
+  background-color:#cda434;
   width: 210px;
   height: 270px;
-  perspective: 100px;
   margin-top: 50px;
   border-radius: 30px;
-
+  margin-top: 50px;
 }
 
 .flip-card-inner {
@@ -96,7 +95,6 @@ body{
   text-align: center;
   transition: transform 0.7s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -110,21 +108,20 @@ body{
   backface-visibility: hidden;
 }
 
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
 
 .flip-card-back {
-  background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
-
 }
 
-@keyframes changee{
-  0%{margin-left:0;}
-  20%{margin-left:0 ;  }
-
-  25%{margin-left;}
-
+/* Es para dar animaciones especificamente */
+@keyframes changee {
+  0% { margin-left: 0;}
+  20% {margin-left: 0;}
+  25% {margin-left: -100%; }
+  45%{margin-left: -100%;}
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+  75%{margin-left:-300%;}
+  100%{margin-left:-300;}
+}

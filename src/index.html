@@ -3,29 +3,37 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Data Lovers</title>
+  <title>lolPedia</title>
   <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
- <button id="btn-go">Siguiente</button>
 
-  <section id="firts-page">
+  <section id="firts-page">   
+    <div class="slider">
+      <ul>
+        <li><img class="images" src="https://i.ibb.co/D17zsjm/league-of-legends.jpg" alt="league-of-legends"></li>
+        <li><img class="images" src="https://i.ibb.co/cwNZjCh/League-Of-Legends-Gameplay-9.jpg" alt=""></li>
+        <li><img class="images" src="https://i.ibb.co/RysZWyf/B5C.jpg" alt=""></li>
+        <li><img class="images" src="https://i.ibb.co/prG57PJ/League-Of-Legends-Gameplay-9.jpg" alt=""></li>
+      </ul>
+      <button id="next">Siguiente</button>
+    </div>
+  </section>
+
+
+  <section id="second-page" class="second-page">
+    
     <header id="header1">
-      <img id="logo" src="https://i.ibb.co/jH6CzVK/descarga-1.jpg">
+      <img id="logo" src="https://i.ibb.co/jH6CzVK/descarga-1.jpg" alt="" >
       <button id="who">Tips secretos</button>
-
-      <div>
-        <input type="text" id="buscador" class="bnombre">
-        <button id="btnbuscar" class="btnbnombre">buscar</button>
-      </div>
     </header>
 
-    <div id="selects">
+    
       <div class="select-tags">
         <select class="select-tags" id="select-tags"> 
-         <option value="" selected >Todos los roles</option>
+         <option value="" selected >Roles</option>
          <option value="Assassin">Asesino</option>
          <option value="Tank">Tanque</option>
          <option value="Mage">Magico</option>
@@ -34,14 +42,12 @@
          <option value="Fighter">Luchador</option>
         </select>
       </div>
-    </div>
+    
 
-
-
-    <div id="selects">
+    
       <div class="select-partype">
         <select class="select-partype" id="select-partype"> 
-         <option value="" selected >filter P</option>
+         <option value="" selected >Tipos</option>
          <option value="BloodWell">BloodWell</option>
          <option value="MP">mp</option>
          <option value="Energy">energy</option>
@@ -52,11 +58,11 @@
          <option value="Ferocity">ferocity</option>
          <option value="Heat">heat</option>
          <option value="Wind">Wind</option>
-
         </select>
       </div>
-    </div>
+    
 
+    
     <div id="select-order">
       <select name="select" id="name" class="pok-filter">
         <option value="value1">Ordena</option>
@@ -65,27 +71,10 @@
       </select>
     </div>
    
-
-
     
-   
-   
-
-    <div class="slider">
-      <ul>
-    <li><img class="images" src="" alt=""></li>
-    <li><img class="images" src="https://i.ibb.co/NFn1Ctm/images-3.jpg" alt=""></li>
-    <li><img class="images" src="https://i.ibb.co/8PmXJ0t/images-4.jpg" alt=""></li>
-    <li><img class="images" src="https://i.ibb.co/prG57PJ/League-Of-Legends-Gameplay-9.jpg" alt=""></li>
-    <li><img class="images" src="i" alt=""></li>
-    </ul>
-  </div>
-  </section>
-
-
+    
+ </section>
  <div id="root"></div>
- 
-  <section id="second-page"> </section>
 
 
   <script src="./data/lol/lol.js"></script>
