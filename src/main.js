@@ -11,10 +11,10 @@ document.getElementById("next").addEventListener("click", () => {
 //creamos funcion que crea cartas con los elementos y las enviamos al contenedor root
 const container = document.getElementById("root");
 const createCards = (lolData) => {
-  let cards = "";
+  let characters = ""; 
   lolData.forEach(element => {
-  const card +=
-`  <div class= "flip-card">
+   const cards =
+  `  <div class= "flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
     <h3>${element.name} </h3>
@@ -28,9 +28,9 @@ const createCards = (lolData) => {
         </div>
   </div>
 </div>`
-
+characters += cards;
   })
-  container.innerHTML = cards;
+  container.innerHTML = characters;
 }
 createCards(lolData)
 
