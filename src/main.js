@@ -68,7 +68,6 @@ selecTags.addEventListener("change", () => {
       `
 });
 
-
 //creamos funcion que filtre por el de tipo de personaje que el usuario eliga 
 const selectpartype = document.getElementById("select-partype");
 selectpartype.addEventListener("change", () => {
@@ -89,8 +88,6 @@ selectpartype.addEventListener("change", () => {
       `
 });
 
-
-
 // creamos funcion que ordene de la A a Z y de Z a A los personajes dependiendo de la necesidad del usuario
 const selectOrder = document.getElementById("name");
 selectOrder.addEventListener('change', () => {
@@ -98,10 +95,4 @@ selectOrder.addEventListener('change', () => {
   let result3 = window.sortName(lolData, "name", condition3);
   createCards(result3);
 });
-
-
-
-
-
-
 

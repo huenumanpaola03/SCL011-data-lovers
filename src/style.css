@@ -1,19 +1,21 @@
 body {
   background-color: #26252d;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
   margin: 0;
 }
+
 #font {
-  color:#BE9E2E;
+  color: #BE9E2E;
   margin-right: 800px;
- }
- #font2{
-   color:#BE9E2E;
-   margin-left: 800px;
-   margin-top: -60px;
- }
- #next {
+}
+
+#font2 {
+  color: #BE9E2E;
+  margin-left: 800px;
+  margin-top: -60px;
+}
+
+#next {
   border-radius: 5px;
   width: 150px;
   height: 50px;
@@ -31,11 +33,6 @@ body {
   margin-left: 15px;
 }
 
-#champions{
-  background-color: rgb(236, 225, 225);
-margin-left: 15px;
-}
-
 .slider {
   width: 1200px;
   height: 900px;
@@ -46,7 +43,7 @@ margin-left: 15px;
   display: flex;
   padding: 0;
   width: 300%;
-  animation: changee 15s infinite;
+  animation: changee 17s infinite;
 }
 
 .slider li {
@@ -87,15 +84,23 @@ margin-left: 15px;
   height: 190px;
   border-radius: 10px;
 }
-
-#namee{
-  padding: 0 0 0 50px;
-
+.champions {
+  background-color: rgb(231, 220, 220);
+ text-align: center;
+ margin-top: 20px;
 }
+#calculation{
+  margin-top:-20px;
+}
+#namee {
+  padding: 0 0 0 50px;
+}
+
+
 .flip-card {
   background-color: rgb(194, 165, 63);
   width: 210px;
-  height: 310px;
+  height: 315px;
   margin-top: 50px;
   border-radius: 10px;
   padding: 10px;
@@ -123,6 +128,8 @@ margin-left: 15px;
 .flip-card-back {
   color: white;
   transform: rotateY(180deg);
+  padding: 0;
+  margin: 0;
 }
 
 /* keyframes Es para dar animaciones especificamente en este caso al carrusel*/
@@ -155,21 +162,34 @@ margin-left: 15px;
 }
 
 /*******Tamaño celular*******/
-@media only screen and (max-width:768px) { 
 
-#selects{
-  width: 60px;
-  height: 40px;
-  flex-flow: wrap;
-  margin-top :20px;
-}
-#champions{
-  display: none;
-}
-#root{
-  margin-top: 24%;
-}
-
-     }
+@media only screen and (max-width:768px) {
+  #next{
+  margin-left:110px;
+  margin-top: 60px;
+  }
+  #selects {
+    width: 60px;
+    height:40px;
+    flex-flow: wrap;
+    margin-top: 20px;
+  }
+  .champions {
+    display: none;
+  }
+  #calculation{
+    margin-top: 35%;
+  }
   
-    
+     .images{
+       width: 420px;
+       height: 200px;
+     }
+
+     #font{
+       padding: 10px;
+     }
+   #font2{ 
+     display: none;
+    }
+}
