@@ -14,8 +14,7 @@ const calculatingT = (lolData, condition) => {
  window.calculatingT = calculatingT;
 
 
-
-// creamos funcion que filtre que en este caso sera en su condicion de etiquetas 
+// creamos funcion que filtre que en este caso sera en su condicion de etiquetas
 const filterP = (lolData, condition2) => {
   let result = lolData.filter(element => {
     return element.partype.includes(condition2);
@@ -29,6 +28,7 @@ const calculatingP = (lolData, condition2) => {
   return calculateResultP;
  }
  window.calculatingP = calculatingP;
+
 
 // creamos funcion la cuan ordenara de A a a la Z o de Z a la A dependiendo de la seleccion.
 const sortName = (lolData,sort,condition3)=> {

@@ -1,39 +1,47 @@
 body {
-background-color:#303030;
+  background-color: #26252d;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  position: absolute;
 
 }
-
-#firts-page{
-  background-color: #303030;
-
+#font {
+  color:#BE9E2E;
+  margin-right: 800px;
+ }
+ #font2{
+   color:#BE9E2E;
+   margin-left: 800px;
+   margin-top: -60px;
+ }
+ #next {
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  margin-left: 40%;
+  margin-top: -25px;
 }
 
 #header1 {
   width: 100%;
   height: 120px;
-  background:linear-gradient(50deg,#EDF06A,#E0BC3B,#BE9E2E,#887824,#6B5C16);
+  background: linear-gradient(50deg, rgb(245, 247, 123), #E0BC3B, #BE9E2E);
 }
 
 #logo {
-  margin-top: 15px;
-  margin-left: 50px;
- 
+  margin-left: 15px;
 }
 
-#next{
-  border-radius: 5px;
-  width: 150px;
-  height: 50px;
-  margin-left: 40%;
-
+#champions{
+  background-color: rgb(236, 225, 225);
+margin-left: 15px;
 }
 
 .slider {
-  width: 1000px;
-  height: 800px;
+  width: 1200px;
+  height: 900px;
   margin: auto;
-  margin-top: 34px;
 }
 
 .slider ul {
@@ -48,68 +56,59 @@ background-color:#303030;
 }
 
 .images {
-  width: 980px;
-  height: 400px;
+  width: 1300px;
+  height: 450px;
 }
 
-
-#font{
-  color:#D7AC35;
-  text-align: center;
-}
-.select-tags {
+.select {
   width: 150px;
   height: 40px;
   border-radius: 5px;
-  margin:10px;
+  margin: 10px;
 }
+
 #selects {
   display: flex;
-flex-direction: row;
-justify-content: center;
-margin-left: 60px;
-margin-right: 60px;
-margin-top:2%;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 160px;
+  margin-right: 80px;
+  margin-top: -5%;
 }
 
-
 #root {
-  background-color: black;
   margin: auto;
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
   justify-content: space-evenly;
-margin: 20px;
-
 }
 
 .imagen-lol {
   width: 200px;
   height: 190px;
   border-radius: 10px;
-  margin: 5px;
-
 }
 
-.flip-card {
-  background-color:#cda434;
-  width: 210px;
-  height: 300px;
-  margin-top: 50px;
-  border-radius: 30px;
-  margin-top: 50px;
+#namee{
+  padding: 0 0 0 50px;
 
+}
+.flip-card {
+  background-color: rgb(194, 165, 63);
+  width: 210px;
+  height: 310px;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .flip-card-inner {
   position: relative;
   width: 10%;
   height: 10%;
-  text-align: center;
-  transition: transform 0.7s;
+  transition: transform 0.9s;
   transform-style: preserve-3d;
-  text-align: center;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -123,20 +122,56 @@ margin: 20px;
   backface-visibility: hidden;
 }
 
-
 .flip-card-back {
   color: white;
   transform: rotateY(180deg);
 }
 
-/* Es para dar animaciones especificamente */
+/* keyframes Es para dar animaciones especificamente en este caso al carrusel*/
+
 @keyframes changee {
-  0% { margin-left: 0;}
-  20% {margin-left: 0;}
-  25% {margin-left: -100%; }
-  45%{margin-left: -100%;}
-  50%{margin-left: -200%;}
-  70%{margin-left: -200%;}
-  75%{margin-left:-300%;}
-  100%{margin-left:-300;}
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -110%;
+  }
+  45% {
+    margin-left: -110%;
+  }
+  50% {
+    margin-left: -230%;
+  }
+  70% {
+    margin-left: -230%;
+  }
+  75% {
+    margin-left: -310%;
+  }
+  90% {
+    margin-left: -310;
+  }
 }
+
+/*******Tamaño celular*******/
+@media only screen and (max-width:768px) { 
+
+#selects{
+  width: 60px;
+  height: 40px;
+  flex-flow: wrap;
+  margin-top :20px;
+}
+#champions{
+  display: none;
+}
+#root{
+  margin-top: 24%;
+}
+
+     }
+  
+    
