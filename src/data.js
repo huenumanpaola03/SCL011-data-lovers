@@ -1,12 +1,12 @@
 //creamos funciones de filtro las cuales van a filtrar los elementos segun la condicion seleccionada 
-const filterT = (lolData , condition) => {
+
+const filterT = (lolData, condition) => {
   let result = lolData.filter(element => {
     return element.tags.includes(condition);
   });
   return result;
 };
 window.filterT = filterT;
-
 
 
 const filterP = (lolData, condition2) => {
@@ -18,22 +18,22 @@ const filterP = (lolData, condition2) => {
 window.filterP = filterP;
 
 
-const sortName = (lolData,sort,condition3)=> {
- let orderName = lolData;
- if (condition3 == "a-z"){
-orderName.sort((a,b)=> {
- if (a[sort] < b[sort]) {return -1;}
- if (a[sort] > b[sort]) {return  1;}
- return 0;
-})
-}
-if (condition3 == "z-a"){
-  orderName.sort((a,b)=> {
-   if (a[sort] > b[sort]) {return -1;}
-   if (a[sort] < b[sort]) {return  1;}
-   return 0;
-  })
-}
-return orderName;
+const sortName = (lolData, sort, condition3) => {
+  let orderName = lolData;
+  if (condition3 == "a-z") {
+    orderName.sort((a, b) => {
+      if (a[sort] < b[sort]) { return -1; }
+      if (a[sort] > b[sort]) { return 1; }
+      return 0;
+    })
+  }
+  if (condition3 == "z-a") {
+    orderName.sort((a, b) => {
+      if (a[sort] > b[sort]) { return -1; }
+      if (a[sort] < b[sort]) { return 1; }
+      return 0;
+    })
+  }
+  return orderName;
 }
 window.sortName = sortName;

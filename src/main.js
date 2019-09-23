@@ -1,4 +1,4 @@
-const lolData = Object.values(window.LOL.data);
+const lolData = Object.values(LOL.data);
 window.lolData = lolData;
 
 
@@ -11,29 +11,29 @@ document.getElementById("next").addEventListener("click", () => {
 //creamos funcion que crea cartas con los elementos y las enviamos al contenedor root
 const container = document.getElementById("root");
 const createCards = (lolData) => {
-  let cards = "";
+  let characters = "";
   lolData.forEach(element => {
-  const card +=
-`  <div class= "flip-card">
+    const cards =
+      `  <div class= "flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-    <h3>${element.name} </h3>
+    <h3 id="namee">${element.name} </h3>
     <img class="imagen-lol" src="${element.splash}" >
     </div>
 
     <div class="flip-card-back">
          <h4>Tipo: ${element.partype}</h4> 
-        <h4> Nivel de dicultad:${element.info.difficulty}</h4> 
+        <h4> Nivel de dificultad:${element.info.difficulty}</h4> 
         <h4> Nivel de ataque:${element.info.attack}</h4> 
+        <h4> Nivel de defensa: ${element.info.defense}</h4>
         </div>
   </div>
 </div>`
-
+    characters += cards;
   })
-  container.innerHTML = cards;
+  container.innerHTML = characters;
 }
 createCards(lolData)
-
 
 
 document.getElementById("logo").addEventListener("click", () => {
@@ -50,17 +50,17 @@ selecTags.addEventListener("change", () => {
 });
 
 const selectpartype = document.getElementById("select-partype");
-selectpartype.addEventListener("change", ()=> {  
-   const condition2 = selectpartype.value 
-   let results2 = window.filterP(lolData, condition2);
-   createCards(results2);
+selectpartype.addEventListener("change", () => {
+  const condition2 = selectpartype.value
+  let results2 = window.filterP(lolData, condition2);
+  createCards(results2);
 });
-  
 
-  const selectOrder= document.getElementById("name");
-  selectOrder.addEventListener('change', ()=> {
-    const condition3 = selectOrder.value;
-    let result3 = window.sortName(lolData,"name",condition3);
-    createCards(result3);
-  });
+
+const selectOrder = document.getElementById("name");
+selectOrder.addEventListener('change', () => {
+  const condition3 = selectOrder.value;
+  let result3 = window.sortName(lolData, "name", condition3);
+  createCards(result3);
+});
 
