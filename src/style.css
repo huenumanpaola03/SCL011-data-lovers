@@ -12,7 +12,7 @@ background-color:#303030;
 #header1 {
   width: 100%;
   height: 120px;
-  background-color:#D7AC35;
+  background:linear-gradient(50deg,#EDF06A,#E0BC3B,#BE9E2E,#887824,#6B5C16);
 }
 
 #logo {
