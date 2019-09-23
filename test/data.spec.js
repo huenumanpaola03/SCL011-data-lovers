@@ -36,7 +36,11 @@ describe('filterT', () => {
   });
 })
 
-
+describe('calculatingT',()=>{
+  it('debería ser una función',()=>{
+    assert.equal(typeof calculatingT,'function');
+  })
+})
 
 describe('filterP', () => {
 
@@ -70,6 +74,12 @@ describe('filterP', () => {
       }
       ]);
   });
+})
+
+describe('calculatingP',()=>{
+  it('debería ser una función',()=>{
+    assert.equal(typeof calculatingP,'function');
+  })
 })
 
 
