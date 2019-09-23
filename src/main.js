@@ -54,6 +54,7 @@ selecTags.addEventListener("change", () => {
   let results = window.filterT(lolData, condition);
   createCards(results);
 });
+//agragamos calculo a la funcion el cual dira cuantos personajes son por cada filtro
 const calculationFunctions = document.getElementById("calculation");
 selecTags.addEventListener("change", () => {
   calculationFunctions.style.display = "block";
@@ -67,14 +68,14 @@ selecTags.addEventListener("change", () => {
       `
 });
 
-
-//creamos funcion que filtre por el filtro de tipo de personaje que el usuario eliga 
+//creamos funcion que filtre por el de tipo de personaje que el usuario eliga 
 const selectpartype = document.getElementById("select-partype");
 selectpartype.addEventListener("change", () => {
   const condition2 = selectpartype.value;
   let results2 = window.filterP(lolData, condition2);
   createCards(results2);
 });
+//agragamos calculo a la funcion el cual dira cuantos personajes son por cada filtro
 selectpartype.addEventListener("change", () => {
   calculationFunctions.style.display = "block";
   let conditionSP = selectpartype.value;
@@ -87,8 +88,6 @@ selectpartype.addEventListener("change", () => {
       `
 });
 
-
-
 // creamos funcion que ordene de la A a Z y de Z a A los personajes dependiendo de la necesidad del usuario
 const selectOrder = document.getElementById("name");
 selectOrder.addEventListener('change', () => {
@@ -96,10 +95,4 @@ selectOrder.addEventListener('change', () => {
   let result3 = window.sortName(lolData, "name", condition3);
   createCards(result3);
 });
-
-
-
-
-
-
 

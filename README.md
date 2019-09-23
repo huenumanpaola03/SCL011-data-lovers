@@ -4,8 +4,8 @@
 
 ## League of legends
 
-  
-<center><a href="https://imgbb.com/"><img  src="https://i.ibb.co/KwyBd2L/Logo-Sample-By-Tailor-Brands-11-1.png" alt="9e16aa55-7f20-401d-8e9a-bff56a60d6f3" border="0"></a></center>
+<center><a href="https://imgbb.com/"><img src="https://i.ibb.co/XJfw8mC/9e16aa55-7f20-401d-8e9a-bff56a60d6f3.jpg" alt="9e16aa55-7f20-401d-8e9a-bff56a60d6f3" border="0"></a></center>
+
 Nuestra pagina fue llamada InfoGame y fue realizada para jugadores intermedios que tienen previo conocimiento del juego de League of Legends pero que a la vez quisieran informarse con datos de sus personajes que puedan necesitar y asi con la informacion de nuestra pagina logren mejorar sus habilidades en el juego.
 
 ## Objetivos de InfoGame
