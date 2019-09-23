@@ -14,11 +14,11 @@ document.getElementById("next").addEventListener("click", () => {
 //su informacion. todo esto se enviara impreso a root el cual contendra todas las impresiones dependiendo su filtro.
 const container = document.getElementById("root");
 const createCards = (lolData) => {
-  let characters = ""; 
+  let characters = "";
   lolData.forEach(element => {
-   const cards =
-         
-  `  <div class= "flip-card">
+    const cards =
+
+      `  <div class= "flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
     <h3 id="namee">${element.name} </h3>
@@ -35,7 +35,7 @@ const createCards = (lolData) => {
   </div>
 </div>`
 
-characters += cards;
+    characters += cards;
   })
   container.innerHTML = characters;
 }
@@ -54,51 +54,54 @@ selecTags.addEventListener("change", () => {
   let results = window.filterT(lolData, condition);
   createCards(results);
 });
-  const calculationFunctions = document.getElementById("calculation");
-  selecTags.addEventListener("change", () => {
-    calculationFunctions.style.display = "block";
+//agragamos calculo a la funcion el cual dira cuantos personajes son por cada filtro
+const calculationFunctions = document.getElementById("calculation");
+selecTags.addEventListener("change", () => {
+  calculationFunctions.style.display = "block";
   let conditionST = selecTags.value;
-  let resultCF =  window.calculatingT(lolData, conditionST);
-  calculationFunctions.innerHTML ="";
-  calculationFunctions.innerHTML +=  `
+  let resultCF = window.calculatingT(lolData, conditionST);
+  calculationFunctions.innerHTML = "";
+  calculationFunctions.innerHTML += `
       <div>
       <h3> Del total de los personajes; ${resultCF} Son de esta etiqueta</h3>
       </div>
       `
-    });
-
-
-//creamos funcion que filtre por el filtro de tipo de personaje que el usuario eliga 
-selectpartype.addEventListener("change", ()=> {  
-   const condition2 = selectpartype.value;
-   let results2 = window.filterP(lolData, condition2);
-   createCards(results2);
 });
-selectpartype.addEventListener("change", ()=> { 
+
+
+//creamos funcion que filtre por el de tipo de personaje que el usuario eliga 
+const selectpartype = document.getElementById("select-partype");
+selectpartype.addEventListener("change", () => {
+  const condition2 = selectpartype.value;
+  let results2 = window.filterP(lolData, condition2);
+  createCards(results2);
+});
+//agragamos calculo a la funcion el cual dira cuantos personajes son por cada filtro
+selectpartype.addEventListener("change", () => {
   calculationFunctions.style.display = "block";
   let conditionSP = selectpartype.value;
-  let resultCSP =  window.calculatingP(lolData, conditionSP);
-  calculationFunctions.innerHTML ="";
-  calculationFunctions.innerHTML +=  `
+  let resultCSP = window.calculatingP(lolData, conditionSP);
+  calculationFunctions.innerHTML = "";
+  calculationFunctions.innerHTML += `
       <div>
       <h3> Del total de los personajes; ${resultCSP} Son de este tipo</h3>
       </div>
       `
-    });
+});
 
 
-  
+
 // creamos funcion que ordene de la A a Z y de Z a A los personajes dependiendo de la necesidad del usuario
-  const selectOrder= document.getElementById("name");
-  selectOrder.addEventListener('change', ()=> {
-    const condition3 = selectOrder.value;
-    let result3 = window.sortName(lolData,"name",condition3);
-    createCards(result3);
-  });
+const selectOrder = document.getElementById("name");
+selectOrder.addEventListener('change', () => {
+  const condition3 = selectOrder.value;
+  let result3 = window.sortName(lolData, "name", condition3);
+  createCards(result3);
+});
 
 
 
 
 
- 
- 
+
+

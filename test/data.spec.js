@@ -6,19 +6,19 @@ require('./data.spec.js');
 
 describe('filterT', () => {
 
-  const muestra = [ 
+  const muestra = [
     {
-      name:"Aatrox",
+      name: "Aatrox",
       tags: "",
       partype: "BloodWell"
     },
     {
-      name:"Ahri",
+      name: "Ahri",
       tags: "Mage",
       partype: "MP"
     },
     {
-      name:"Yasuo",
+      name: "Yasuo",
       tags: "Fighter",
       partype: "Wind"
     }
@@ -28,30 +28,31 @@ describe('filterT', () => {
   });
 
   it('debería retornar "Yasuo"cuando se filtra type "Fighter" ', () => {
-    assert.deepEqual(window.filterT(muestra,"Fighter") ,[
-      {name:"Yasuo",
-    tags: "Fighter",
-    partype: "Wind"
-  }]);
+    assert.deepEqual(window.filterT(muestra, "Fighter"), [
+      {
+        name: "Yasuo",
+        tags: "Fighter",
+        partype: "Wind"
+      }]);
   });
 })
 
-describe('calculatingT',()=>{
-  it('debería ser una función',()=>{
-    assert.equal(typeof calculatingT,'function');
+describe('calculatingT', () => {
+  it('debería ser una función', () => {
+    assert.equal(typeof calculatingT, 'function');
   })
 })
 
 describe('filterP', () => {
 
-  const datatest = [ 
+  const datatest = [
     {
-      name:"Aatrox",
+      name: "Aatrox",
       tags: "",
       partype: "BloodWell"
     },
     {
-      name:"Ahri",
+      name: "Ahri",
       tags: "Mage",
       partype: "MP"
     },
@@ -66,19 +67,19 @@ describe('filterP', () => {
   });
 
   it('debería retornar "Akali" cuando se filtra type "Energy" ', () => {
-    assert.deepEqual(window.filterP(datatest,"Energy") ,[
+    assert.deepEqual(window.filterP(datatest, "Energy"), [
       {
         name: "Akali",
         tags: "Assassin",
         partype: "Energy"
       }
-      ]);
+    ]);
   });
 })
 
-describe('calculatingP',()=>{
-  it('debería ser una función',()=>{
-    assert.equal(typeof calculatingP,'function');
+describe('calculatingP', () => {
+  it('debería ser una función', () => {
+    assert.equal(typeof calculatingP, 'function');
   })
 })
 
@@ -86,9 +87,9 @@ describe('calculatingP',()=>{
 
 describe('sortName', () => {
 
-  const sortNametest = [ 
+  const sortNametest = [
     {
-      name:"Aatrox",
+      name: "Aatrox",
       tags: "",
       partype: "BloodWell"
     },
@@ -107,10 +108,10 @@ describe('sortName', () => {
     assert.equal(typeof sortName, 'function');
   });
 
-  it('debería retornar los personajes ordenados de la A a la Z' , () => {
-    assert.deepEqual(window.sortName(sortNametest,"A-Z") ,[
+  it('debería retornar los personajes ordenados de la A a la Z', () => {
+    assert.deepEqual(window.sortName(sortNametest, "A-Z"), [
       {
-        name:"Aatrox",
+        name: "Aatrox",
         tags: "",
         partype: "BloodWell"
       },
@@ -124,13 +125,13 @@ describe('sortName', () => {
         tags: "Assassin",
         partype: "Energy"
       }
-      ]);
+    ]);
   });
 
-  it('debería retornar los personajes ordenados de la Z a la A' , () => {
-    assert.deepEqual(window.sortName(sortNametest,"Z-A") ,[
+  it('debería retornar los personajes ordenados de la Z a la A', () => {
+    assert.deepEqual(window.sortName(sortNametest, "Z-A"), [
       {
-        name:"Aatrox",
+        name: "Aatrox",
         tags: "",
         partype: "BloodWell"
       },
@@ -143,8 +144,8 @@ describe('sortName', () => {
         name: "Zed",
         tags: "Assassin",
         partype: "Energy"
-        
+
       }
     ]);
-});
+  });
 })
